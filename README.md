@@ -1,6 +1,6 @@
 # Review Doctor Slack Bot
 
-![Review doctor photo](./assets/review_dr_photo_Small.jpeg)
+![Review doctor photo](./assets/review_doctor_preview.webp)
 
 ## Description
 
