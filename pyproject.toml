@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "reviewdoctorslackbot"
+version = "0.1.0"
+description = "Review Doctor Slack Bot"
+authors = ["Aldrin Navarro <dev.aldnav@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+slack-sdk = "^3.23.0"
+slack-bolt = "^1.18.0"
+flask = "^3.0.0"
+python-dotenv = "^1.0.0"
+langchain = "^0.0.334"
+openai = "^1.2.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11.0"
+isort = "^5.12.0"
+pre-commit = "^3.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
