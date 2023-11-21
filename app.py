@@ -18,8 +18,6 @@ from utils import verify_slack_request
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
-# from functions import draft_email
-
 # Load environment variables from .env file
 load_dotenv(find_dotenv())
 

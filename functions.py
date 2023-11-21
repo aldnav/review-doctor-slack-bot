@@ -29,14 +29,9 @@ So make sure to keep the link and the text.
 
 """
     system_message_prompt = SystemMessagePromptTemplate.from_template(template)
-
-    # human_template = "Here's the email to reply to and consider any other comments from the user for reply as well: {user_input}"
-    # human_message_prompt = HumanMessagePromptTemplate.from_template(human_template)
-
     chat_prompt = ChatPromptTemplate.from_messages(
         [
             system_message_prompt,
-            # human_message_prompt,
         ]
     )
 
