@@ -150,6 +150,9 @@ def summarize_requests(command):
     try:
         pinned_messages = slack_client.pins_list(channel=channel_id)
     except SlackApiError as e:
+        logger.exception(e)
+        if "not_in_channel" in str(e):
+            return "I am not in the channel. Please add me to the channel and try again"
         return "Something went wrong. Please try again later."
 
     messages = pinned_messages["items"]
